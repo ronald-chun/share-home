@@ -1,0 +1,8 @@
+{
+  "name": "ShareHome",
+  "app_id": "50b66925",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}

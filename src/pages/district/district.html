@@ -1,0 +1,42 @@
+
+<ion-header>
+	<ion-navbar>
+<!-- 		<ion-title>District</ion-title>
+ -->
+		<!-- <ion-toolbar no-border-top> -->
+			<ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput()" (ionCancel)="onCancel()"></ion-searchbar>
+		<!-- </ion-toolbar> -->
+	</ion-navbar>
+
+</ion-header>
+
+<ion-content>
+	<ion-grid>
+		<ion-row>
+			<ion-col col-6 *ngFor=" let item of [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ] " >
+				<a (click)="getItemDetail()" >
+					<ion-card>
+						<!-- <ion-card-header> -->
+							<!-- <img center *ngIf="snack.photos[0]" src="http://snackbase.staging.playa.com.hk/storage/snacks/{{snack.photos[0].filename}}"> -->
+							<img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png">
+						<!-- </ion-card-header> -->
+
+						<ion-card-content>
+							<span> 樓盤 {{item}} </span>		
+						    <ion-grid >
+								<ion-row text-center>
+									<ion-col class="pointer" col-6 (click)='saveItem(item)'>
+										<ion-icon name="heart"  ></ion-icon>
+									</ion-col>
+									<ion-col class="pointer" col-6 (click)='more(item)'>
+										<ion-icon name="more" ></ion-icon>
+									</ion-col>
+								</ion-row>
+							</ion-grid>			
+						</ion-card-content>
+					</ion-card>
+				</a>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-content>

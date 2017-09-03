@@ -1,0 +1,179 @@
+<ion-header>
+<!--     <ion-navbar>
+        <ion-title>ShareHome</ion-title>
+    </ion-navbar>
+-->
+<ion-toolbar no-border-top>
+    <ion-searchbar [(ngModel)]="myInput" [showCancelButton]="shouldShowCancel" (ionInput)="onInput()" (ionCancel)="onCancel()">
+    </ion-searchbar>
+
+</ion-toolbar>
+</ion-header>
+
+<ion-content class="card-background-page">
+    <ion-grid>
+        <ion-row>
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">中西區</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">東區</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">南區</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">灣仔</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">九龍城</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">油尖旺</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">深水埗</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">黃大仙</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">觀塘</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">大埔</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">屯門</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">元朗</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">北區</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">西貢</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">沙田</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">荃灣</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">葵青</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+
+            <ion-col class="pointer"col-6>
+                <a (click)="getDistrictItems()" >
+                    <ion-card>
+                        <img src="http://ionicframework.com/dist/preview-app/www/assets/img/card-saopaolo.png"/>
+                        <div class="card-title">離島</div>
+                    </ion-card>
+                </a>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
